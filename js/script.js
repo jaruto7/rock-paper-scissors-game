@@ -42,7 +42,6 @@ var playerMove = function(playerPick){
   }
   else if(playerPick == 'rock'){
     playerChoice = 2;
-    rockInfo = 'rock';
   }
   else if(playerPick == 'scissors'){
     playerChoice = 3;
@@ -56,6 +55,11 @@ var playerMove = function(playerPick){
   }
   else if((playerChoice == 2 && comChoice == 1) || (playerChoice == 3 && comChoice == 2) || (playerChoice == 1 && comChoice == 3)){ 
    winner = 'computer';
+  }
+var playerMoveClass = document.getElementsByClassName("player-move");
+
+  for(i = 0; i < playerMoveClass.length; i++) {
+
   }
   
   //Stage 2
