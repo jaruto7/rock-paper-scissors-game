@@ -56,10 +56,15 @@ var playerMove = function(playerPick){
   else if((playerChoice == 2 && comChoice == 1) || (playerChoice == 3 && comChoice == 2) || (playerChoice == 1 && comChoice == 3)){ 
    winner = 'computer';
   }
-var playerMoveClass = document.getElementsByClassName("player-move");
+
+  var playerMoveClass = document.getElementsByClassName("player-move");
 
   for(i = 0; i < playerMoveClass.length; i++) {
+    var getAttrib = playerMoveClass.getAttribute("data-move");
 
+    var pickAllBtns = function(value){
+      playerMove(value[i]);   
+    } 
   }
   
   //Stage 2
